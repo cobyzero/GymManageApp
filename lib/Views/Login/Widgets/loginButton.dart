@@ -11,7 +11,9 @@ class LoginButton extends StatelessWidget {
         MyElevatedButton(
           text: "Sign In",
           icon: const Icon(Icons.arrow_right_alt),
-          fun: () {},
+          fun: () {
+            Navigator.pushNamed(context, "home");
+          },
         )
       ],
     );
